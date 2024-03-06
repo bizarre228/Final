@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/template/css/login.css">
+<title>Login</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__link" href="/">Back</a>
+        <h1 class="header-title">Cinema Forum</h1>
+      
+       
+    </header>
+  
+    <main>
+        <div class="form__signin">
+<form action="/signin" method="post">
+    <label for="username"><b>Username</b></label>
+    <input type="username" placeholder="Enter username" name="username" id="username" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <div class="error">{{ .ErrorText }}</div>
+    <button id="submitButton">Submit</button>
+</form>
+</div>
+</main>
+<script src="/template/js/script.js"></script>
+</body>
+</html> 

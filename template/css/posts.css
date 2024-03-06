@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container2 {
+    margin: 70px auto; /* Увеличен отступ сверху для учета высоты header */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.header2 {
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #111;
+    z-index: 1; /* Установлен z-index для header */
+}
+
+.header__link2 {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header-title2 {
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+    flex-grow: 1;
+}
+
+.main2 {
+    padding: 20px;
+    margin-top: 70px; /* Увеличен отступ сверху для учета высоты header */
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-descr2 {
+    margin-bottom: 20px;
+}
+
+.title2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card-text2 {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.time2 {
+    color: #ccc;
+}
+
+.card-categories2 {
+    color: #fff;
+}
+
+.card-categories2 h2 {
+    color: #fff;
+}
+
+.card-categories2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-categories2 li {
+    margin-bottom: 5px;
+}
+
+.likes2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.likes2 button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.likes2 button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.comment2 {
+    margin-bottom: 20px;
+}
+
+.comment2 p {
+    color: #ccc;
+}
+
+.comment2 .likes2 button {
+    margin-right: 5px;
+}
+
+.card-postcomment2 {
+    margin-top: 20px;
+}
+
+.card-postcomment2 input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.card-postcomment2 label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.card-postcomment2 input[type="text"] {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.card-postcomment2 input[type="submit"] {
+    background-color: #e50914;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-postcomment2 input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+  
+}
+.card-descr2 img {
+    max-width: 20%;
+    height: auto; /* Поддерживаем соотношение сторон при изменении ширины */
+}

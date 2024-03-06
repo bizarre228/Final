@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', Helvetica, Verdana, monospace, sans-serif;
+    letter-spacing: 0.2rem;
+    color: #fff;
+    overflow: hidden;
+    background: #000; /* Changed background color to black */
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: transparent; /* Removed background color */
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+
+.header-title {
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+    margin-top: -10px;
+    flex-grow: 1;
+}
+
+/* Стили для кнопки "Back" */
+.header-back-btn {
+    background-color: transparent; /* Removed background color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header-back-btn:hover {
+    color: #e50914; /* Netflix red */
+}
+/* Стили для формы .form-create */
+.container {
+    max-width: 600px; /* Adjusted for responsiveness */
+    width: 100%;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Darkened form background */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjusted box-shadow */
+    color: #fff;
+}
+
+.form-create {
+    width: 100%;
+}
+
+.form-create fieldset {
+    border: none;
+}
+
+.form-create legend {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Стилизация чекбоксов */
+.checkbox-inline {
+    margin-right: 10px;
+    color: #fff;
+}
+
+/* Стилизация полей ввода и текстовых областей */
+.form-control {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Стилизация кнопок */
+.form-create .btn {
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-create .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Стили для предупреждающего сообщения */
+.alert-warning {
+    background-color: #ffdddd;
+    color: red;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Базовые стили кнопки */
+.btn {
+    padding: 10px 15px;
+    background-color: #e50914; /* Netflix red */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Анимация при наведении */
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* Анимация при нажатии */
+.btn:active {
+    transform: scale(0.95);
+}
+
+.form-group, .form-control, .btn {
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-title {
+        margin-top: 0; /* Adjusted margin-top for smaller screens */
+    }
+}

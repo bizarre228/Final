@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <link rel="stylesheet" href="/template/css/error.css">
+    <title>{{.Text_err}}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
+      <a class="navbar-brand" href="/">Cinema Forum</a>
+  </nav>
+    <div class="container">
+        <h1 class="text-center my-4 text-danger">Error {{.Code_err}}</h1>
+        <div class="alert alert-danger" role="alert">
+            <p class="text">Oppss! {{.Text_err}}</p>
+        </div>
+        <div class="text-center">
+            <a href="javascript:history.back()" class="btn btn-primary">Go back</a>
+        </div>
+    </div>
+
+  </body>
+</html>
